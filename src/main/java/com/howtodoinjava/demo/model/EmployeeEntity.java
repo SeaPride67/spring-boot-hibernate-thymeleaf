@@ -15,14 +15,14 @@ public class EmployeeEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     
-    @Column(name="first_name")
-    private String firstName;
+    @Column(name="vol_full_name")
+    private String volFullName;
     
-    @Column(name="last_name")
-    private String lastName;
+    @Column(name="vol_location")
+    private String volLocation;
     
-    @Column(name="email", nullable=false, length=200)
-    private String email;
+    @Column(name="vol_email", nullable=false, length=200)
+    private String volEmail;
     
     public Long getId() {
 		return id;
@@ -32,33 +32,33 @@ public class EmployeeEntity {
 		this.id = id;
 	}
 
-	public String getFirstName() {
-		return firstName;
+	public String getVolFullName() {
+		return volFullName;
 	}
 
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
+	public void setVolFullName(String volFullName) {
+		this.volFullName = volFullName;
 	}
 
-	public String getLastName() {
-		return lastName;
+	public String getVolLocation() {
+		return volLocation;
 	}
 
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
+	public void setVolLocation(String volLocation) {
+		this.volLocation = volLocation;
 	}
 
-	public String getEmail() {
-		return email;
+	public String getVolEmail() {
+		return volEmail;
 	}
 
-	public void setEmail(String email) {
-		this.email = email;
+	public void setVolEmail(String volEmail) {
+		this.volEmail = volEmail;
 	}
 
     @Override
     public String toString() {
-        return "EmployeeEntity [id=" + id + ", firstName=" + firstName + 
-                ", lastName=" + lastName + ", email=" + email   + "]";
+        return "EmployeeEntity [id=" + id + ", volFullname=" + volFullName + 
+                ", volLocation=" + volLocation + ", volEmail=" + volEmail   + "]";
     }
 }

@@ -54,9 +54,9 @@ public class EmployeeService {
 			if(employee.isPresent()) 
 			{
 				EmployeeEntity newEntity = employee.get();
-				newEntity.setEmail(entity.getEmail());
-				newEntity.setFirstName(entity.getFirstName());
-				newEntity.setLastName(entity.getLastName());
+				newEntity.setVolEmail(entity.getVolEmail());
+				newEntity.setVolFullName(entity.getVolFullName());
+				newEntity.setVolLocation(entity.getVolLocation());
 
 				newEntity = repository.save(newEntity);
 				
